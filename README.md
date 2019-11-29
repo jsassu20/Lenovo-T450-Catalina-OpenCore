@@ -31,3 +31,10 @@
 - Jsass20@gmail.com (or Jsassu20@me.com)
 
 #
+
+# Credits 
+
+- EchoEspirit - https://github.com/EchoEsprit/Hackintosh-Catalina-OpenCore-Lenovo-T450s-efi.
+
+ - For his/her LenovoT450s OpenCore build which I used as a base for this build as I'm still learning the ins and outs of proper building on OpenCore based systems since its a radically different approach compared with my previous venture into CLOVER based Hackintosh setups and whats required to build a successful one. You can find that build here https://github.com/EchoEsprit/Hackintosh-Catalina-OpenCore-Lenovo-T450s-efi. Keep in mind the T450s is the same as the T450 in every important aspect in building a Hackintosh system so you can use this build of his as it is. The only thing that may need editing is the settings for proper battery reporting.
+
