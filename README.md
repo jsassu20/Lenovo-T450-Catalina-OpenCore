@@ -14,7 +14,7 @@
 
 #
 
-# YOU MUST DISABLE CSM SUPPORT IN BIOS
+## Important Information For Usining OpenCore Instead Of Clover
 
 - OpenCore will not boot if CSM support is enabled in the BIOS!!! This can be confusing because usually CSM is required to successfully boot Clover but it needs to be disabled for OpenCore.
 
