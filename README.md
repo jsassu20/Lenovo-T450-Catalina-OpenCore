@@ -1,6 +1,6 @@
 ![Screenshot](misc/logo/screenshot.png)
 
-# macOS Catalina (Lenovo ThinkPad T450)
+# macOS Catalina (OpenCore Build) Lenovo ThinkPad T450
 
 ```  
 - Intel 5th Generation Architecture (Broadwell)
@@ -9,7 +9,7 @@
 - macOS Catalina Catalina
 - OpenCore Based Configuration
 - AirPort Extreme (Broadcom BCM94360CSAX & NGFF A/E Adapter) * Recommended Upgrade
-- All native macOS Catalina features work as long as you upgrade the WiFi card to a supported configuration
+- BETA BUILD!! Not all features may function like they do in my Clover Build
 ```
 
 #
