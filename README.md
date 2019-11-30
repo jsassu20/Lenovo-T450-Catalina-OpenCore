@@ -1,4 +1,4 @@
-![Screenshot](misc/logo/screenshot.png)
+![Screenshot](EFI/OC/misc/logo/screenshot.png)
 
 # macOS Catalina (OpenCore Build) Lenovo ThinkPad T450
 
