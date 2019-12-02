@@ -104,7 +104,8 @@
 			</dict>
 		</array>
 		<key>Block</key>
-		<array/>
+		<array>
+		</array>
 		<key>Patch</key>
 		<array>
 			<dict>
@@ -587,12 +588,6 @@
 		<dict>
 			<key>PciRoot(0x0)/Pci(0x1b,0x0)</key>
 			<dict>
-				<key>AAPL,slot-name</key>
-				<data>5r4FNsb3QtM=</data>
-				<key>PinConfigurations</key>
-				<data></data>
-				<key>device_type</key>
-				<data>4SvgQXVkaW8gRGV2aWNl</data>
 				<key>layout-id</key>
 				<data>Nw==</data>
 			</dict>
@@ -1003,7 +998,8 @@
 	<key>Misc</key>
 	<dict>
 		<key>BlessOverride</key>
-		<array/>
+		<array>
+		</array>
 		<key>Boot</key>
 		<dict>
 			<key>ConsoleBehaviourOs</key>
@@ -1132,9 +1128,11 @@
 		<key>Block</key>
 		<dict>
 			<key>4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14</key>
-			<array/>
+			<array>
+			</array>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
-			<array/>
+			<array>
+			</array>
 		</dict>
 		<key>LegacyEnable</key>
 		<false/>
