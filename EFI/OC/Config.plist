@@ -16,11 +16,19 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>XHC and EH01 Configuration (USB 2 &amp; 3)</string>
+				<string>EH01</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-USBX.aml</string>
+				<string>SSDT-EH01.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>XHC</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-XHC.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -32,7 +40,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>System Bus Fix</string>
+				<string>SMBU</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -48,7 +56,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Add Power Button</string>
+				<string>Add PWRB</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -56,11 +64,27 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Battery Fix With BATC</string>
+				<string>Battery Basic</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-BATT.aml</string>
+				<string>SSDT-BAT.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Battery Dual</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-BATC.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Backlight Key</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-BKey.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -72,27 +96,43 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Sleep LED Reset Fix</string>
+				<string>Temprature control fan speed</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-EXT3.aml</string>
+				<string>SSDT-TEMPToFans.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Sleep Wake Screen Fix</string>
+				<string>Sleep connected patch</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-EXT4.aml</string>
+				<string>SSDT-PTSWAK.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>System Wake</string>
+				<string>Sleep LED</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-PTWK.aml</string>
+				<string>SSDT-EXT3-LedReset.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Sleep Wake Screen</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-EXT4-WakeScreen.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Disable Nvidia GPU</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-DDGPU.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -100,7 +140,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-TPKB.aml</string>
+				<string>SSDT-Thinkpad_Clickpad.aml</string>
 			</dict>
 		</array>
 		<key>Block</key>
