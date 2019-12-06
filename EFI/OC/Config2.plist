@@ -180,12 +180,12 @@
 				<integer>0</integer>
 				<key>TableSignature</key>
 				<data>
-				RFNEVA==
+				AAAAAA==
 				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>battery BAT0:GBIF03 to XBIF03</string>
+				<string>BAT0:GBIF03 to XBIF03</string>
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
@@ -216,12 +216,12 @@
 				<integer>0</integer>
 				<key>TableSignature</key>
 				<data>
-				RFNEVA==
+				AAAAAA==
 				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>battery BAT0:GBST04 to XBST04</string>
+				<string>BAT0:GBST04 to XBST04</string>
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
@@ -252,12 +252,12 @@
 				<integer>0</integer>
 				<key>TableSignature</key>
 				<data>
-				RFNEVA==
+				AAAAAA==
 				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>battery BAT0:SBMN to BMNX128</string>
+				<string>BAT0:SBMN to BMNX128</string>
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
@@ -288,12 +288,12 @@
 				<integer>0</integer>
 				<key>TableSignature</key>
 				<data>
-				RFNEVA==
+				AAAAAA==
 				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>battery BAT0:SBDN to BDNX128</string>
+				<string>BAT0:SBDN to BDNX128</string>
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
@@ -324,7 +324,7 @@
 				<integer>0</integer>
 				<key>TableSignature</key>
 				<data>
-				RFNEVA==
+				AAAAAA==
 				</data>
 			</dict>
 			<dict>
@@ -360,7 +360,7 @@
 				<integer>0</integer>
 				<key>TableSignature</key>
 				<data>
-				RFNEVA==
+				AAAAAA==
 				</data>
 			</dict>
 			<dict>
@@ -396,7 +396,7 @@
 				<integer>0</integer>
 				<key>TableSignature</key>
 				<data>
-				RFNEVA==
+				AAAAAA==
 				</data>
 			</dict>
 			<dict>
@@ -432,12 +432,12 @@
 				<integer>0</integer>
 				<key>TableSignature</key>
 				<data>
-				RFNEVA==
+				AAAAAA==
 				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>_Q14 to XQ14(TP-up)</string>
+				<string>Brightness Up (_Q14 to XQ14)</string>
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
@@ -468,12 +468,12 @@
 				<integer>0</integer>
 				<key>TableSignature</key>
 				<data>
-				RFNEVA==
+				AAAAAA==
 				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>_Q15 to XQ15(TP-down)</string>
+				<string>Brightness Down (_Q15 to XQ15)</string>
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
@@ -504,7 +504,7 @@
 				<integer>0</integer>
 				<key>TableSignature</key>
 				<data>
-				RFNEVA==
+				AAAAAA==
 				</data>
 			</dict>
 			<dict>
@@ -540,7 +540,7 @@
 				<integer>0</integer>
 				<key>TableSignature</key>
 				<data>
-				RFNEVA==
+				AAAAAA==
 				</data>
 			</dict>
 			<dict>
@@ -576,7 +576,7 @@
 				<integer>0</integer>
 				<key>TableSignature</key>
 				<data>
-				RFNEVA==
+				AAAAAA==
 				</data>
 			</dict>
 			<dict>
@@ -611,7 +611,6 @@
 				<integer>0</integer>
 				<key>TableSignature</key>
 				<data>
-				RFNEVA==
 				</data>
 			</dict>
 			<dict>
@@ -646,7 +645,6 @@
 				<integer>0</integer>
 				<key>TableSignature</key>
 				<data>
-				RFNEVA==
 				</data>
 			</dict>
 			<dict>
@@ -681,7 +679,6 @@
 				<integer>0</integer>
 				<key>TableSignature</key>
 				<data>
-				RFNEVA==
 				</data>
 			</dict>
 			<dict>
@@ -716,142 +713,6 @@
 				<integer>0</integer>
 				<key>TableSignature</key>
 				<data>
-				RFNEVA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Notify (BAT1, 0x80) ---&gt; BATC  Battery</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				hkJBVDEKgA==
-				</data>
-				<key>Mask</key>
-				<data>
-				</data>
-				<key>OemTableId</key>
-				<data>
-				</data>
-				<key>Replace</key>
-				<data>
-				hkJBVEMKgA==
-				</data>
-				<key>ReplaceMask</key>
-				<data>
-				</data>
-				<key>TableSignature</key>
-				<data>
-				RFNEVA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Notify (BAT0, 0x81) ---&gt; BATC  Battery</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				hkJBVDAKgQ==
-				</data>
-				<key>Mask</key>
-				<data>
-				</data>
-				<key>OemTableId</key>
-				<data>
-				</data>
-				<key>Replace</key>
-				<data>
-				hkJBVEMKgQ==
-				</data>
-				<key>ReplaceMask</key>
-				<data>
-				</data>
-				<key>TableSignature</key>
-				<data>
-				RFNEVA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Notify (BAT0, 0x80) ---&gt; BATC  Battery</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				hkJBVDAKgA==
-				</data>
-				<key>Mask</key>
-				<data>
-				</data>
-				<key>OemTableId</key>
-				<data>
-				</data>
-				<key>Replace</key>
-				<data>
-				hkJBVEMKgA==
-				</data>
-				<key>ReplaceMask</key>
-				<data>
-				</data>
-				<key>TableSignature</key>
-				<data>
-				RFNEVA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Notify (_SB.PCI0.LPC.EC.BAT1, 0x01) ---&gt; BATC   Battery</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				hlwvBV9TQl9QQ0kwTFBDX0VDX19CQVQxAQ==
-				</data>
-				<key>Mask</key>
-				<data>
-				</data>
-				<key>OemTableId</key>
-				<data>
-				</data>
-				<key>Replace</key>
-				<data>
-				hlwvBV9TQl9QQ0kwTFBDX0VDX19CQVRDAQ==
-				</data>
-				<key>ReplaceMask</key>
-				<data>
-				</data>
-				<key>TableSignature</key>
-				<data>
-				RFNEVA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Notify (_SB.PCI0.LPC.EC.BAT1, 0x03) ---&gt; BATC   Battery</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				hlwvBV9TQl9QQ0kwTFBDX0VDX19CQVQxCgM=
-				</data>
-				<key>Mask</key>
-				<data>
-				</data>
-				<key>OemTableId</key>
-				<data>
-				</data>
-				<key>Replace</key>
-				<data>
-				hlwvBV9TQl9QQ0kwTFBDX0VDX19CQVRDCgM=
-				</data>
-				<key>ReplaceMask</key>
-				<data>
-				</data>
-				<key>TableSignature</key>
-				<data>
-				RFNEVA==
 				</data>
 			</dict>
 		</array>
@@ -1329,7 +1190,7 @@
 			<key>ShowPicker</key>
 			<true/>
 			<key>Timeout</key>
-			<integer>10</integer>
+			<integer>5</integer>
 		</dict>
 		<key>Debug</key>
 		<dict>
