@@ -8,7 +8,7 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>x86 Patch</string>
+				<string>OpenCore x86 Patch (Needed to be able to boot)</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -16,15 +16,23 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>XHC and EH01 Configuration (USB 2 &amp; 3)</string>
+				<string>Device EH01 Configuration (USB 2.0 Bus)</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-USBX.aml</string>
+				<string>SSDT-USB2.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Backlight, with Whatevergreen applbkl=1</string>
+				<string>Device XHC Configuration (USB 3.1 Bus)</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-USB3.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Backlight Control Settings (Set Whatevergreen boot arguement applbkl=1)</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -32,7 +40,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>System Bus Fix</string>
+				<string>SMBU Correction (SMC Bus Configuration)</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -40,7 +48,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Add MCHC</string>
+				<string>Add MCHC (PCI0 name in real Mac hardware)</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -48,7 +56,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Add Power Button</string>
+				<string>Add PWRB (Adds power button hardware profile to DSDT)</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -56,11 +64,27 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Battery Fix With BATC</string>
+				<string>ThinkPad Dual Battery Basic Configuration</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
 				<string>SSDT-BATT.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>ThinkPad Battery Dual Combined into Single</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-BATC.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Backlight Key Configuration</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-KBRD.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -72,23 +96,15 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Sleep LED Reset Fix</string>
+				<string>Temprature control fan speed</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-EXT3.aml</string>
+				<string>SSDT-TEMP.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Sleep Wake Screen Fix</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-EXT4.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>System Wake</string>
+				<string>Sleep connected patch</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -96,16 +112,39 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Clickpad</string>
+				<string>Sleep LED</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-TPKB.aml</string>
+				<string>SSDT-EXT3.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Sleep Wake Screen</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-EXT4.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Disable Nvidia GPU</string>
+				<key>Enabled</key>
+				<false/>
+				<key>Path</key>
+				<string>SSDT-DGPU.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>TrackPad Configuration</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-TPAD.aml</string>
 			</dict>
 		</array>
 		<key>Block</key>
-		<array>
-		</array>
+		<array/>
 		<key>Patch</key>
 		<array>
 			<dict>
@@ -116,23 +155,33 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>X1VQQw==</data>
+				<data>
+				X1VQQw==
+				</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
-				<data></data>
+				<data>
+				</data>
 				<key>OemTableId</key>
-				<data>AAAAAAAAAAA=</data>
+				<data>
+				AAAAAAAAAAA=
+				</data>
 				<key>Replace</key>
-				<data>WFVQQw==</data>
+				<data>
+				WFVQQw==
+				</data>
 				<key>ReplaceMask</key>
-				<data></data>
+				<data>
+				</data>
 				<key>Skip</key>
 				<integer>0</integer>
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data>AAAAAA==</data>
+				<data>
+				AAAAAA==
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -142,23 +191,33 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>R0JJRgM=</data>
+				<data>
+				R0JJRgM=
+				</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
-				<data></data>
+				<data>
+				</data>
 				<key>OemTableId</key>
-				<data>AAAAAAAAAAA=</data>
+				<data>
+				AAAAAAAAAAA=
+				</data>
 				<key>Replace</key>
-				<data>WEJJRgM=</data>
+				<data>
+				WEJJRgM=
+				</data>
 				<key>ReplaceMask</key>
-				<data></data>
+				<data>
+				</data>
 				<key>Skip</key>
 				<integer>0</integer>
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data>AAAAAA==</data>
+				<data>
+				AAAAAA==
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -168,23 +227,33 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>R0JTVAQ=</data>
+				<data>
+				R0JTVAQ=
+				</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
-				<data></data>
+				<data>
+				</data>
 				<key>OemTableId</key>
-				<data>AAAAAAAAAAA=</data>
+				<data>
+				AAAAAAAAAAA=
+				</data>
 				<key>Replace</key>
-				<data>WEJTVAQ=</data>
+				<data>
+				WEJTVAQ=
+				</data>
 				<key>ReplaceMask</key>
-				<data></data>
+				<data>
+				</data>
 				<key>Skip</key>
 				<integer>0</integer>
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data>AAAAAA==</data>
+				<data>
+				AAAAAA==
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -194,23 +263,33 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>U0JNTkA=</data>
+				<data>
+				U0JNTkA=
+				</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
-				<data></data>
+				<data>
+				</data>
 				<key>OemTableId</key>
-				<data>AAAAAAAAAAA=</data>
+				<data>
+				AAAAAAAAAAA=
+				</data>
 				<key>Replace</key>
-				<data>Qk1OWEA=</data>
+				<data>
+				Qk1OWEA=
+				</data>
 				<key>ReplaceMask</key>
-				<data></data>
+				<data>
+				</data>
 				<key>Skip</key>
 				<integer>0</integer>
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data>AAAAAA==</data>
+				<data>
+				AAAAAA==
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -220,23 +299,33 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>U0JETkA=</data>
+				<data>
+				U0JETkA=
+				</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
-				<data></data>
+				<data>
+				</data>
 				<key>OemTableId</key>
-				<data>AAAAAAAAAAA=</data>
+				<data>
+				AAAAAAAAAAA=
+				</data>
 				<key>Replace</key>
-				<data>QkROWEA=</data>
+				<data>
+				QkROWEA=
+				</data>
 				<key>ReplaceMask</key>
-				<data></data>
+				<data>
+				</data>
 				<key>Skip</key>
 				<integer>0</integer>
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data>AAAAAA==</data>
+				<data>
+				AAAAAA==
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -246,23 +335,33 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>hkJBVDA=</data>
+				<data>
+				hkJBVDA=
+				</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
-				<data></data>
+				<data>
+				</data>
 				<key>OemTableId</key>
-				<data>AAAAAAAAAAA=</data>
+				<data>
+				AAAAAAAAAAA=
+				</data>
 				<key>Replace</key>
-				<data>hkJBVEM=</data>
+				<data>
+				hkJBVEM=
+				</data>
 				<key>ReplaceMask</key>
-				<data></data>
+				<data>
+				</data>
 				<key>Skip</key>
 				<integer>0</integer>
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data>AAAAAA==</data>
+				<data>
+				AAAAAA==
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -272,23 +371,33 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>hkJBVDE=</data>
+				<data>
+				hkJBVDE=
+				</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
-				<data></data>
+				<data>
+				</data>
 				<key>OemTableId</key>
-				<data>AAAAAAAAAAA=</data>
+				<data>
+				AAAAAAAAAAA=
+				</data>
 				<key>Replace</key>
-				<data>hkJBVEM=</data>
+				<data>
+				hkJBVEM=
+				</data>
 				<key>ReplaceMask</key>
-				<data></data>
+				<data>
+				</data>
 				<key>Skip</key>
 				<integer>0</integer>
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data>AAAAAA==</data>
+				<data>
+				AAAAAA==
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -298,23 +407,33 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>hlwvBV9TQl9QQ0kwTFBDQkVDMF9CQVQx</data>
+				<data>
+				hlwvBV9TQl9QQ0kwTFBDQkVDMF9CQVQx
+				</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
-				<data></data>
+				<data>
+				</data>
 				<key>OemTableId</key>
-				<data>AAAAAAAAAAA=</data>
+				<data>
+				AAAAAAAAAAA=
+				</data>
 				<key>Replace</key>
-				<data>hlwvBV9TQl9QQ0kwTFBDQkVDMF9CQVRD</data>
+				<data>
+				hlwvBV9TQl9QQ0kwTFBDQkVDMF9CQVRD
+				</data>
 				<key>ReplaceMask</key>
-				<data></data>
+				<data>
+				</data>
 				<key>Skip</key>
 				<integer>0</integer>
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data>AAAAAA==</data>
+				<data>
+				AAAAAA==
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -324,23 +443,33 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>X1ExNA==</data>
+				<data>
+				X1ExNA==
+				</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
-				<data></data>
+				<data>
+				</data>
 				<key>OemTableId</key>
-				<data>AAAAAAAAAAA=</data>
+				<data>
+				AAAAAAAAAAA=
+				</data>
 				<key>Replace</key>
-				<data>WFExNA==</data>
+				<data>
+				WFExNA==
+				</data>
 				<key>ReplaceMask</key>
-				<data></data>
+				<data>
+				</data>
 				<key>Skip</key>
 				<integer>0</integer>
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data>AAAAAA==</data>
+				<data>
+				AAAAAA==
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -350,23 +479,33 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>X1ExNQ==</data>
+				<data>
+				X1ExNQ==
+				</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
-				<data></data>
+				<data>
+				</data>
 				<key>OemTableId</key>
-				<data>AAAAAAAAAAA=</data>
+				<data>
+				AAAAAAAAAAA=
+				</data>
 				<key>Replace</key>
-				<data>WFExNQ==</data>
+				<data>
+				WFExNQ==
+				</data>
 				<key>ReplaceMask</key>
-				<data></data>
+				<data>
+				</data>
 				<key>Skip</key>
 				<integer>0</integer>
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data>AAAAAA==</data>
+				<data>
+				AAAAAA==
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -376,23 +515,33 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>RUhDMQ==</data>
+				<data>
+				RUhDMQ==
+				</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
-				<data></data>
+				<data>
+				</data>
 				<key>OemTableId</key>
-				<data>AAAAAAAAAAA=</data>
+				<data>
+				AAAAAAAAAAA=
+				</data>
 				<key>Replace</key>
-				<data>RUgwMQ==</data>
+				<data>
+				RUgwMQ==
+				</data>
 				<key>ReplaceMask</key>
-				<data></data>
+				<data>
+				</data>
 				<key>Skip</key>
 				<integer>0</integer>
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data>AAAAAA==</data>
+				<data>
+				AAAAAA==
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -402,23 +551,33 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>WEhDSQ==</data>
+				<data>
+				WEhDSQ==
+				</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
-				<data></data>
+				<data>
+				</data>
 				<key>OemTableId</key>
-				<data>AAAAAAAAAAA=</data>
+				<data>
+				AAAAAAAAAAA=
+				</data>
 				<key>Replace</key>
-				<data>WEhDXw==</data>
+				<data>
+				WEhDXw==
+				</data>
 				<key>ReplaceMask</key>
-				<data></data>
+				<data>
+				</data>
 				<key>Skip</key>
 				<integer>0</integer>
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data>AAAAAA==</data>
+				<data>
+				AAAAAA==
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -428,21 +587,31 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>X1BUUwE=</data>
+				<data>
+				X1BUUwE=
+				</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
-				<data></data>
+				<data>
+				</data>
 				<key>OemTableId</key>
-				<data></data>
+				<data>
+				</data>
 				<key>Replace</key>
-				<data>WlBUUwE=</data>
+				<data>
+				WlBUUwE=
+				</data>
 				<key>ReplaceMask</key>
-				<data></data>
+				<data>
+				</data>
 				<key>Skip</key>
 				<integer>0</integer>
 				<key>TableLength</key>
 				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -452,21 +621,31 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>X1dBSwE=</data>
+				<data>
+				X1dBSwE=
+				</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
-				<data></data>
+				<data>
+				</data>
 				<key>OemTableId</key>
-				<data></data>
+				<data>
+				</data>
 				<key>Replace</key>
-				<data>WldBSwE=</data>
+				<data>
+				WldBSwE=
+				</data>
 				<key>ReplaceMask</key>
-				<data></data>
+				<data>
+				</data>
 				<key>Skip</key>
 				<integer>0</integer>
 				<key>TableLength</key>
 				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -476,21 +655,31 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>V2luZG93cyAyMDE1AA==</data>
+				<data>
+				V2luZG93cyAyMDE1AA==
+				</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
-				<data></data>
+				<data>
+				</data>
 				<key>OemTableId</key>
-				<data></data>
+				<data>
+				</data>
 				<key>Replace</key>
-				<data>RGFyd2luAKOjo6Ojow==</data>
+				<data>
+				RGFyd2luAKOjo6Ojow==
+				</data>
 				<key>ReplaceMask</key>
-				<data></data>
+				<data>
+				</data>
 				<key>Skip</key>
 				<integer>0</integer>
 				<key>TableLength</key>
 				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -500,21 +689,31 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>MDYAcAFXVklTcAvWB09TWVOgIQ==</data>
+				<data>
+				MDYAcAFXVklTcAvWB09TWVOgIQ==
+				</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
-				<data></data>
+				<data>
+				</data>
 				<key>OemTableId</key>
-				<data></data>
+				<data>
+				</data>
 				<key>Replace</key>
-				<data>MTUAcAFXSU44cAvfB09TWVOgGg==</data>
+				<data>
+				MTUAcAFXSU44cAvfB09TWVOgGg==
+				</data>
 				<key>ReplaceMask</key>
-				<data></data>
+				<data>
+				</data>
 				<key>Skip</key>
 				<integer>0</integer>
 				<key>TableLength</key>
 				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>
+				</data>
 			</dict>
 		</array>
 		<key>Quirks</key>
@@ -527,58 +726,7 @@
 			<false/>
 			<key>RebaseRegions</key>
 			<false/>
-			<key>ResetHwSig</key>
-			<false/>
 			<key>ResetLogoStatus</key>
-			<false/>
-		</dict>
-	</dict>
-	<key>Booter</key>
-	<dict>
-		<key>MmioWhitelist</key>
-		<array>
-			<dict>
-				<key>Address</key>
-				<integer>4275159040</integer>
-				<key>Comment</key>
-				<string>Haswell: SB_RCBA is a 0x4 page memory region, containing SPI_BASE at 0x3800 (SPI_BASE_ADDRESS)</string>
-				<key>Enabled</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>Address</key>
-				<integer>4278190080</integer>
-				<key>Comment</key>
-				<string>Generic: PCI root is a 0x1000 page memory region used by some firmwares</string>
-				<key>Enabled</key>
-				<false/>
-			</dict>
-		</array>
-		<key>Quirks</key>
-		<dict>
-			<key>AvoidRuntimeDefrag</key>
-			<true/>
-			<key>DevirtualiseMmio</key>
-			<false/>
-			<key>DisableSingleUser</key>
-			<false/>
-			<key>DisableVariableWrite</key>
-			<false/>
-			<key>DiscardHibernateMap</key>
-			<false/>
-			<key>EnableSafeModeSlide</key>
-			<true/>
-			<key>EnableWriteUnprotector</key>
-			<true/>
-			<key>ForceExitBootServices</key>
-			<false/>
-			<key>ProtectCsmRegion</key>
-			<false/>
-			<key>ProvideCustomSlide</key>
-			<true/>
-			<key>SetupVirtualMap</key>
-			<true/>
-			<key>ShrinkMemoryMap</key>
 			<false/>
 		</dict>
 	</dict>
@@ -586,47 +734,76 @@
 	<dict>
 		<key>Add</key>
 		<dict>
-			<key>PciRoot(0x0)/Pci(0x1b,0x0)</key>
-			<dict>
-				<key>layout-id</key>
-				<data>Nw==</data>
-			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
-				<data>BgAmFg==</data>
+				<data>
+				BgAmFg==
+				</data>
 				<key>AAPL,slot-name</key>
-				<string>Internal@0,2,0</string>
+				<data>
+				SW50ZXJuYWxAMCwyLDA=
+				</data>
 				<key>device-id</key>
-				<data>FhYAAA==</data>
+				<data>
+				FhYAAA==
+				</data>
 				<key>device_type</key>
-				<string>VGA compatible controller</string>
+				<data>
+				VkdBIGNvbXBhdGlibGUgY29udHJvbGxlcg==
+				</data>
 				<key>framebuffer-con0-enable</key>
-				<data>AQAAAA==</data>
+				<data>
+				AQAAAA==
+				</data>
 				<key>framebuffer-con0-flags</key>
-				<data>OAIAAA==</data>
+				<data>
+				OAIAAA==
+				</data>
 				<key>framebuffer-con0-pipe</key>
-				<data>EgAAAA==</data>
+				<data>
+				EgAAAA==
+				</data>
 				<key>framebuffer-con1-enable</key>
-				<data>AQAAAA==</data>
+				<data>
+				AQAAAA==
+				</data>
 				<key>framebuffer-con1-pipe</key>
-				<data>EgAAAA==</data>
+				<data>
+				EgAAAA==
+				</data>
 				<key>framebuffer-con2-enable</key>
-				<data>AQAAAA==</data>
+				<data>
+				AQAAAA==
+				</data>
 				<key>framebuffer-con2-pipe</key>
-				<data>EgAAAA==</data>
+				<data>
+				EgAAAA==
+				</data>
 				<key>framebuffer-fbmem</key>
-				<data>AACQAA==</data>
+				<data>
+				AACQAA==
+				</data>
 				<key>framebuffer-patch-enable</key>
-				<data>AQAAAA==</data>
+				<data>
+				AQAAAA==
+				</data>
 				<key>framebuffer-portcount</key>
-				<data>AgAAAA==</data>
+				<data>
+				AgAAAA==
+				</data>
 				<key>framebuffer-stolenmem</key>
-				<data>AAAwAQ==</data>
+				<data>
+				AAAwAQ==
+				</data>
 				<key>framebuffer-unifiedmem</key>
-				<data>AAAAgA==</data>
+				<data>
+				AAAAgA==
+				</data>
 				<key>model</key>
-				<string>HD Graphics 5500</string>
+				<data>
+				SEQgR3JhcGhpY3MgNTUwMA==
+				</data>
 			</dict>
 		</dict>
 		<key>Block</key>
@@ -837,134 +1014,147 @@
 				<true/>
 				<key>Identifier</key>
 				<string>com.apple.driver.AppleHPET</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
 			</dict>
 		</array>
-		<key>Emulate</key>
-		<dict>
-			<key>Cpuid1Data</key>
-			<data></data>
-			<key>Cpuid1Mask</key>
-			<data></data>
-		</dict>
 		<key>Patch</key>
 		<array>
 			<dict>
+				<key>Base</key>
+				<string></string>
 				<key>Comment</key>
-				<string>com.apple.driver.AppleRTC</string>
+				<string></string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
 				<false/>
 				<key>Find</key>
-				<data>dS4Ptg==</data>
+				<data>
+				dS4Ptg==
+				</data>
 				<key>Identifier</key>
 				<string>com.apple.driver.AppleRTC</string>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
-				<data></data>
+				<data>
+				</data>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
 				<key>Replace</key>
-				<data>6y4Ptg==</data>
+				<data>
+				6y4Ptg==
+				</data>
 				<key>ReplaceMask</key>
-				<data></data>
+				<data>
+				</data>
 				<key>Skip</key>
 				<integer>0</integer>
 			</dict>
 			<dict>
+				<key>Base</key>
+				<string></string>
 				<key>Comment</key>
-				<string>com.apple.driver.AppleRTC</string>
+				<string></string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
 				<false/>
 				<key>Find</key>
-				<data>dTMPtw==</data>
+				<data>
+				dTMPtw==
+				</data>
 				<key>Identifier</key>
 				<string>com.apple.driver.AppleRTC</string>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
-				<data></data>
+				<data>
+				</data>
 				<key>MaxKernel</key>
 				<string>18.5.0</string>
 				<key>MinKernel</key>
 				<string>18.5.0</string>
 				<key>Replace</key>
-				<data>6zMPtw==</data>
+				<data>
+				6zMPtw==
+				</data>
 				<key>ReplaceMask</key>
-				<data></data>
+				<data>
+				</data>
 				<key>Skip</key>
 				<integer>0</integer>
 			</dict>
 			<dict>
+				<key>Base</key>
+				<string>_AcpiOsVprintf</string>
 				<key>Comment</key>
-				<string>0x16260006,0x16260004/etc, 32MB BIOS, 19MB framebuffer, 9MB cursor bytes (credit RehabMan)</string>
+				<string></string>
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
 				<false/>
 				<key>Find</key>
-				<data>AAAgAgAAUAE=</data>
+				<data>
+				</data>
 				<key>Identifier</key>
-				<string>com.apple.driver.AppleIntelBDWGraphicsFramebuffer</string>
+				<string>com.apple.driver.AppleACPIPlatform</string>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
-				<data></data>
-				<key>MatchKernel</key>
-				<string></string>
+				<data>
+				</data>
+				<key>MaxKernel</key>
+				<string>18.5.0</string>
+				<key>MinKernel</key>
+				<string>18.5.0</string>
 				<key>Replace</key>
-				<data>AAAwAQAAkAA=</data>
+				<data>
+				ww==
+				</data>
 				<key>ReplaceMask</key>
-				<data></data>
+				<data>
+				</data>
 				<key>Skip</key>
 				<integer>0</integer>
 			</dict>
 			<dict>
+				<key>Base</key>
+				<string>__ZN11BCM5701Enet14getAdapterInfoEv</string>
 				<key>Comment</key>
-				<string>Enable 128MB DVMT-prealloc, 48MB framebuffer, 48MB cursor bytes, 0x0a260006</string>
+				<string>Broadcom BCM57785 patch</string>
 				<key>Count</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>Enabled</key>
 				<false/>
 				<key>Find</key>
-				<data>BgAmCgEDAwMAAAACAAAwAQAAYAA=</data>
+				<data>
+				6AAA//9miYMABQAA
+				</data>
 				<key>Identifier</key>
-				<string>com.apple.driver.AppleIntelBDWGraphicsFramebuffer</string>
+				<string>com.apple.iokit.AppleBCM5701Ethernet</string>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
-				<data></data>
-				<key>MatchKernel</key>
+				<data>
+				/wAA////////////
+				</data>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
 				<string></string>
 				<key>Replace</key>
-				<data>BgAmCgEDAwMAAAAIAAAAAwAAAAM=</data>
+				<data>
+				uLQWAABmiYMABQAA
+				</data>
 				<key>ReplaceMask</key>
-				<data></data>
-				<key>Skip</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>change F%uT%04x to F%uTxxxx in AppleBacklightInjector.kext (credit RehabMan)</string>
-				<key>Count</key>
-				<integer>0</integer>
-				<key>Enabled</key>
-				<false/>
-				<key>Find</key>
-				<data>RiV1VCUwNHgA</data>
-				<key>Identifier</key>
-				<string>com.apple.driver.AppleBacklight</string>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data></data>
-				<key>MatchKernel</key>
-				<string></string>
-				<key>Replace</key>
-				<data>RiV1VHh4eHgA</data>
-				<key>ReplaceMask</key>
-				<data></data>
+				<data>
+				</data>
 				<key>Skip</key>
 				<integer>0</integer>
 			</dict>
@@ -975,20 +1165,8 @@
 			<true/>
 			<key>AppleXcpmCfgLock</key>
 			<true/>
-			<key>AppleXcpmExtraMsrs</key>
-			<false/>
-			<key>CustomSMBIOSGuid</key>
-			<false/>
-			<key>DisableIoMapper</key>
-			<true/>
 			<key>ExternalDiskIcons</key>
 			<false/>
-			<key>LapicKernelPanic</key>
-			<false/>
-			<key>PanicNoKextDump</key>
-			<true/>
-			<key>PowerTimeoutKernelPanic</key>
-			<true/>
 			<key>ThirdPartyTrim</key>
 			<true/>
 			<key>XhciPortLimit</key>
@@ -997,9 +1175,6 @@
 	</dict>
 	<key>Misc</key>
 	<dict>
-		<key>BlessOverride</key>
-		<array>
-		</array>
 		<key>Boot</key>
 		<dict>
 			<key>ConsoleBehaviourOs</key>
@@ -1008,20 +1183,14 @@
 			<string></string>
 			<key>ConsoleMode</key>
 			<string></string>
-			<key>HibernateMode</key>
-			<string>None</string>
 			<key>HideSelf</key>
-			<true/>
-			<key>PollAppleHotKeys</key>
 			<true/>
 			<key>Resolution</key>
 			<string>1920×1080@60</string>
 			<key>ShowPicker</key>
 			<true/>
 			<key>Timeout</key>
-			<integer>10</integer>
-			<key>UsePicker</key>
-			<true/>
+			<integer>5</integer>
 		</dict>
 		<key>Debug</key>
 		<dict>
@@ -1034,25 +1203,8 @@
 			<key>Target</key>
 			<integer>19</integer>
 		</dict>
-		<key>Entries</key>
-		<array>
-			<dict>
-				<key>Arguments</key>
-				<string></string>
-				<key>Comment</key>
-				<string>Not signed for security reasons</string>
-				<key>Enabled</key>
-				<false/>
-				<key>Name</key>
-				<string>CustomOS</string>
-				<key>Path</key>
-				<string>PciRoot(0x0)/Pci(0x1,0x1)/Pci(0x0,0x0)/NVMe(0x1,11-22-33-44-55-66-77-88)/HD(1,GPT,00000000-0000-0000-0000-000000000000,0x800,0x64000)/\EFI\BOOT\BOOTX64.EFI</string>
-			</dict>
-		</array>
 		<key>Security</key>
 		<dict>
-			<key>AllowNvramReset</key>
-			<true/>
 			<key>ExposeSensitiveData</key>
 			<integer>2</integer>
 			<key>HaltLevel</key>
@@ -1061,48 +1213,7 @@
 			<false/>
 			<key>RequireVault</key>
 			<false/>
-			<key>ScanPolicy</key>
-			<integer>10559235</integer>
 		</dict>
-		<key>Tools</key>
-		<array>
-			<dict>
-				<key>Arguments</key>
-				<string></string>
-				<key>Comment</key>
-				<string>Memory testing utility</string>
-				<key>Enabled</key>
-				<false/>
-				<key>Name</key>
-				<string>memcheck</string>
-				<key>Path</key>
-				<string>memcheck/memcheck.efi</string>
-			</dict>
-			<dict>
-				<key>Arguments</key>
-				<string></string>
-				<key>Comment</key>
-				<string>VerifyMsrE2.efi</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Name</key>
-				<string>VerifyMsrE2.efi</string>
-				<key>Path</key>
-				<string>VerifyMsrE2.efi</string>
-			</dict>
-			<dict>
-				<key>Arguments</key>
-				<string></string>
-				<key>Comment</key>
-				<string>Shell.efi</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Name</key>
-				<string>Shell.efi</string>
-				<key>Path</key>
-				<string>Shell.efi</string>
-			</dict>
-		</array>
 	</dict>
 	<key>NVRAM</key>
 	<dict>
@@ -1111,56 +1222,29 @@
 			<key>4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14</key>
 			<dict>
 				<key>UIScale</key>
-				<data>AQ==</data>
+				<data>
+				AQ==
+				</data>
 			</dict>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>boot-args</key>
-				<string>debug=0x100 keepsyms=1 darkwake=0 -hbfx-dump-nvram applbkl=1 alcid=55</string>
+				<string>debug=0x100 keepsyms=1 darkwake=0 -hbfx-dump-nvram applbkl=1 -alcdbg -alcbeta -lilubeta alcid=32</string>
 				<key>csr-active-config</key>
-				<data>AAAAAA==</data>
+				<data>
+				AAAAAA==
+				</data>
 				<key>nvda_drv</key>
-				<data></data>
+				<data>
+				</data>
 				<key>prev-lang:kbd</key>
-				<data>emgtSGFuczoyNTI=</data>
+				<data>
+				emgtSGFuczoyNTI=
+				</data>
 			</dict>
 		</dict>
 		<key>Block</key>
-		<dict>
-			<key>4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14</key>
-			<array>
-			</array>
-			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
-			<array>
-			</array>
-		</dict>
-		<key>LegacyEnable</key>
-		<false/>
-		<key>LegacySchema</key>
-		<dict>
-			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
-			<array>
-				<string>EFILoginHiDPI</string>
-				<string>EFIBluetoothDelay</string>
-				<string>LocationServicesEnabled</string>
-				<string>SystemAudioVolume</string>
-				<string>SystemAudioVolumeDB</string>
-				<string>bluetoothActiveControllerInfo</string>
-				<string>bluetoothInternalControllerInfo</string>
-				<string>flagstate</string>
-				<string>fmm-computer-name</string>
-				<string>nvda_drv</string>
-				<string>prev-lang:kbd</string>
-			</array>
-			<key>8BE4DF61-93CA-11D2-AA0D-00E098032B8C</key>
-			<array>
-				<string>Boot0080</string>
-				<string>Boot0081</string>
-				<string>Boot0082</string>
-				<string>BootNext</string>
-				<string>BootOrder</string>
-			</array>
-		</dict>
+		<dict/>
 	</dict>
 	<key>PlatformInfo</key>
 	<dict>
@@ -1171,7 +1255,8 @@
 			<key>MLB</key>
 			<string></string>
 			<key>ROM</key>
-			<data></data>
+			<data>
+			</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemProductName</key>
@@ -1197,41 +1282,14 @@
 		<key>Drivers</key>
 		<array>
 			<string>ApfsDriverLoader.efi</string>
-			<string>HFSPlus.efi</string>
-			<string>VirtualSmc.efi</string>
 			<string>FwRuntimeServices.efi</string>
+			<string>HFSPlus.efi</string>
 			<string>UsbKbDxe.efi</string>
+			<string>VirtualSmc.efi</string>
 		</array>
-		<key>Input</key>
-		<dict>
-			<key>KeyForgetThreshold</key>
-			<integer>5</integer>
-			<key>KeyMergeThreshold</key>
-			<integer>2</integer>
-			<key>KeySupport</key>
-			<false/>
-			<key>KeySupportMode</key>
-			<string>Auto</string>
-			<key>KeySwap</key>
-			<false/>
-			<key>PointerSupport</key>
-			<false/>
-			<key>PointerSupportMode</key>
-			<string></string>
-			<key>TimerResolution</key>
-			<integer>50000</integer>
-		</dict>
 		<key>Protocols</key>
 		<dict>
 			<key>AppleBootPolicy</key>
-			<false/>
-			<key>AppleEvent</key>
-			<false/>
-			<key>AppleImageConversion</key>
-			<false/>
-			<key>AppleKeyMap</key>
-			<false/>
-			<key>AppleUserInterfaceTheme</key>
 			<false/>
 			<key>ConsoleControl</key>
 			<false/>
@@ -1239,19 +1297,9 @@
 			<false/>
 			<key>DeviceProperties</key>
 			<false/>
-			<key>FirmwareVolume</key>
-			<false/>
-			<key>HashServices</key>
-			<false/>
-			<key>UnicodeCollation</key>
-			<false/>
 		</dict>
 		<key>Quirks</key>
 		<dict>
-			<key>AvoidHighAlloc</key>
-			<true/>
-			<key>ClearScreenOnModeSwitch</key>
-			<false/>
 			<key>ExitBootServicesDelay</key>
 			<integer>0</integer>
 			<key>IgnoreInvalidFlexRatio</key>
@@ -1260,11 +1308,7 @@
 			<true/>
 			<key>ProvideConsoleGop</key>
 			<true/>
-			<key>ReconnectOnResChange</key>
-			<false/>
 			<key>ReleaseUsbOwnership</key>
-			<false/>
-			<key>ReplaceTabWithSpace</key>
 			<false/>
 			<key>RequestBootVarRouting</key>
 			<true/>
