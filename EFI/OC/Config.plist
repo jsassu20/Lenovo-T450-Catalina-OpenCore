@@ -722,12 +722,16 @@
 			<dict>
 				<key>Comment</key>
 				<string>Notify (BAT1, 0x80) ---&gt; BATC  Battery</string>
+				<key>Count</key>
+				<integer>0</integer>
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
 				<data>
 				hkJBVDEKgA==
 				</data>
+				<key>Limit</key>
+				<integer>0</integer>
 				<key>Mask</key>
 				<data>
 				</data>
@@ -741,6 +745,10 @@
 				<key>ReplaceMask</key>
 				<data>
 				</data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
 				<key>TableSignature</key>
 				<data>
 				RFNEVA==
@@ -749,12 +757,16 @@
 			<dict>
 				<key>Comment</key>
 				<string>Notify (BAT0, 0x81) ---&gt; BATC  Battery</string>
+				<key>Count</key>
+				<integer>0</integer>
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
 				<data>
 				hkJBVDAKgQ==
 				</data>
+				<key>Limit</key>
+				<integer>0</integer>
 				<key>Mask</key>
 				<data>
 				</data>
@@ -768,6 +780,10 @@
 				<key>ReplaceMask</key>
 				<data>
 				</data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
 				<key>TableSignature</key>
 				<data>
 				RFNEVA==
@@ -776,12 +792,16 @@
 			<dict>
 				<key>Comment</key>
 				<string>Notify (BAT0, 0x80) ---&gt; BATC  Battery</string>
+				<key>Count</key>
+				<integer>0</integer>
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
 				<data>
 				hkJBVDAKgA==
 				</data>
+				<key>Limit</key>
+				<integer>0</integer>
 				<key>Mask</key>
 				<data>
 				</data>
@@ -795,6 +815,10 @@
 				<key>ReplaceMask</key>
 				<data>
 				</data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
 				<key>TableSignature</key>
 				<data>
 				RFNEVA==
@@ -803,12 +827,16 @@
 			<dict>
 				<key>Comment</key>
 				<string>Notify (_SB.PCI0.LPC.EC.BAT1, 0x01) ---&gt; BATC   Battery</string>
+				<key>Count</key>
+				<integer>0</integer>
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
 				<data>
 				hlwvBV9TQl9QQ0kwTFBDX0VDX19CQVQxAQ==
 				</data>
+				<key>Limit</key>
+				<integer>0</integer>
 				<key>Mask</key>
 				<data>
 				</data>
@@ -822,6 +850,10 @@
 				<key>ReplaceMask</key>
 				<data>
 				</data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
 				<key>TableSignature</key>
 				<data>
 				RFNEVA==
@@ -830,12 +862,16 @@
 			<dict>
 				<key>Comment</key>
 				<string>Notify (_SB.PCI0.LPC.EC.BAT1, 0x03) ---&gt; BATC   Battery</string>
+				<key>Count</key>
+				<integer>0</integer>
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
 				<data>
 				hlwvBV9TQl9QQ0kwTFBDX0VDX19CQVQxCgM=
 				</data>
+				<key>Limit</key>
+				<integer>0</integer>
 				<key>Mask</key>
 				<data>
 				</data>
@@ -849,6 +885,10 @@
 				<key>ReplaceMask</key>
 				<data>
 				</data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
 				<key>TableSignature</key>
 				<data>
 				RFNEVA==
