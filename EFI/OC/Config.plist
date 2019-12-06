@@ -991,7 +991,7 @@
 				<key>BundlePath</key>
 				<string>AnyAppleUSBMouse.kext</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
