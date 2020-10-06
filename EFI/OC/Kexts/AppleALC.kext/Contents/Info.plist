@@ -29,17 +29,17 @@
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>11B52</string>
+	<string>11B500</string>
 	<key>DTPlatformVersion</key>
 	<string>GM</string>
 	<key>DTSDKBuild</key>
-	<string>19B81</string>
+	<string>19B89</string>
 	<key>DTSDKName</key>
 	<string>macosx10.15</string>
 	<key>DTXcode</key>
 	<string>1120</string>
 	<key>DTXcodeBuild</key>
-	<string>11B52</string>
+	<string>11B500</string>
 	<key>IOKitPersonalities</key>
 	<dict>
 		<key>HDA Hardware Config Resource</key>
@@ -4882,17 +4882,23 @@
 					<key>ConfigData</key>
 					<data>
 					ASccEAEnHQEBJx6mAScfkAE3HPABNx0AATce
-					AAE3H0ABRx0BAUceFwFHH5ABRwwCAVccQAFX
-					HRABVx4rAVcfBAFXDAIBZxzwAWcdAAFnHgAB
-					Zx9AAYcc8AGHHQABhx4AAYcfQAGXHPABlx0A
-					AZceAAGXH0ABpxwgAacdEAGnHosBpx8EAbcc
-					8AG3HQABtx4AAbcfQAHXHPAB1x0AAdceAAHX
-					H0AB5xzwAecdAAHnHgAB5x9AAUccMA==
+					AAE3H0ABRxxAAUcdAQFHHhcBRx+QAUcMAgFX
+					HFABVx0QAVceKwFXHwQBVwwCAWcc8AFnHQAB
+					Zx4AAWcfQAGHHPABhx0AAYceAAGHH0ABlxzw
+					AZcdAAGXHgABlx9AAaccIAGnHRABpx6LAacf
+					BAG3HPABtx0AAbceAAG3H0AB1xzwAdcdAAHX
+					HgAB1x9AAecc8AHnHQAB5x4AAecfQA==
 					</data>
 					<key>FuncGroup</key>
 					<integer>1</integer>
 					<key>LayoutID</key>
 					<integer>32</integer>
+					<key>WakeConfigData</key>
+					<data>
+					AUcMAg==
+					</data>
+					<key>WakeVerbReinit</key>
+					<true/>
 				</dict>
 				<dict>
 					<key>AFGLowPowerState</key>
