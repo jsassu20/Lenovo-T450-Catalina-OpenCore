@@ -2,6 +2,8 @@
 
 # macOS Catalina (OpenCore Build) Lenovo ThinkPad T450
 
+# COPIED FROM ECHOESPIRITS REPO (CREDIT HIM/HER) https://github.com/EchoEsprit/Hackintosh-Catalina-OpenCore-Lenovo-T450s-efi
+
 ```  
 - Intel 5th Generation Architecture (Broadwell)
 - Intel HD Graphics 5500
