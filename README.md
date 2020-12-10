@@ -162,7 +162,7 @@ EFI folder structure
 
 To setup OpenCore’s folder structure, copy the files from OpenCorePkg so your EFI looks like the one below:
 
-
+```
    |--EFI
    |   |--BOOT
    |   |   |--BOOTx64.efi
@@ -191,6 +191,8 @@ To setup OpenCore’s folder structure, copy the files from OpenCorePkg so your 
    |   |   |   |--CleanNvram.efi
    |   |   |   |--Shell.efi
    |   |   |   |--VerifyMsrE2.efi
+   
+```
 
 Place necessary .efi drivers from AppleSupportPkg and AptioFixPkg into the drivers folder, then kexts/ACPI into their respective folders.
 
@@ -677,7 +679,9 @@ Follow Hiding Verbose for correct setup, set UIScale to 02 for HiDPI
 Users also have noticed that setting ConsoleMode to Max will sometimes fail, leaving it empty can help
 Receiving “Failed to parse real field of type 1”
 
-A value is set as real when it’s not supposed to be, generally being that Xcode converted HaltLevel by accident: ```
+A value is set as real when it’s not supposed to be, generally being that Xcode converted HaltLevel by accident:
+
+```
 HaltLevel 2147483648
 To fix, swap `real` for `integer`:
 HaltLevel 2147483648
